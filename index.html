@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choice Limiter 365 – Google Forms Add-on</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #333; background: #fff; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+      color: #fff;
+      text-align: center;
+      padding: 72px 24px 56px;
+    }
+    .hero img { width: 96px; height: 96px; border-radius: 20px; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.2em; margin-bottom: 12px; }
+    .hero p { font-size: 1.1em; opacity: 0.9; max-width: 560px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #1a73e8;
+      font-weight: bold;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    /* Features */
+    .features {
+      max-width: 900px;
+      margin: 56px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+    }
+    .feature { text-align: center; padding: 16px; }
+    .feature .icon { font-size: 2.4em; margin-bottom: 12px; }
+    .feature h3 { color: #1a73e8; margin-bottom: 8px; }
+    .feature p { font-size: 0.95em; color: #555; line-height: 1.6; }
+
+    /* How it works */
+    .steps {
+      background: #f8f9fa;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .steps h2 { font-size: 1.6em; color: #1a73e8; margin-bottom: 32px; }
+    .steps-grid {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+    }
+    .step { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .step .num { background: #1a73e8; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto 12px; }
+    .step p { font-size: 0.9em; color: #555; line-height: 1.5; }
+
+    /* Links */
+    .links {
+      max-width: 700px;
+      margin: 48px auto;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .links h2 { font-size: 1.4em; color: #444; margin-bottom: 20px; }
+    .link-row { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .link-row a {
+      color: #1a73e8;
+      text-decoration: none;
+      border: 1px solid #1a73e8;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 0.95em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .link-row a:hover { background: #1a73e8; color: #fff; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85em;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+    footer a { color: #1a73e8; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Choice Limiter 365</h1>
+    <p>Limit responses per choice in your Google Forms — perfect for sign-ups, seat reservations, and event registrations.</p>
+    <a class="btn" href="https://workspace.google.com/marketplace" target="_blank">Get it on Google Workspace Marketplace</a>
+  </div>
+
+  <!-- Features -->
+  <div class="features">
+    <div class="feature">
+      <div class="icon">🎯</div>
+      <h3>Set Choice Limits</h3>
+      <p>Assign a maximum number of responses to any answer choice in your Google Form.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">⚡</div>
+      <h3>Automatic Removal</h3>
+      <p>When a limit is reached, the choice is automatically removed so no one can over-select it.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>Privacy First</h3>
+      <p>We never store your respondents' answers. Everything runs inside Google's infrastructure.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🛠️</div>
+      <h3>Easy Setup</h3>
+      <p>Install from the Marketplace, open your form, and configure limits in seconds via the sidebar.</p>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="steps">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="num">1</div>
+        <p>Install Choice Limiter 365 from the Google Workspace Marketplace.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <p>Open your Google Form and click <strong>Extensions → Choice Limiter 365 → Configure Limits</strong>.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <p>Set a response limit for each answer choice you want to cap.</p>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <p>Save and share your form. Limits are enforced automatically in real time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="links">
+    <h2>Resources</h2>
+    <div class="link-row">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="contact.html">Support &amp; Contact</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Choice Limiter 365. All rights reserved. &nbsp;|&nbsp;
+    Contact: <a href="mailto:itwebca@gmail.com">itwebca@gmail.com</a>
+  </footer>
+
+</body>
+</html>
